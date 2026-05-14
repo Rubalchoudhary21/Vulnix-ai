@@ -60,7 +60,7 @@ Point it at any domain you own and get a full security report in minutes.
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/vulnix-ai.git
+git clone https://github.com/Rubalchoudhary21/Vulnix-ai.git
 cd vulnix-ai
 
 # 2. Create a virtual environment (recommended)
