@@ -8,6 +8,7 @@ Point it at any domain you own and get a full security report in minutes.
 ## What it scans for
 
 ### 🔎 Web Security (Passive)
+
 | Check | Description |
 |---|---|
 | Header Analysis | Flags missing CSP, HSTS, X-Frame-Options, X-Content-Type-Options |
@@ -18,6 +19,7 @@ Point it at any domain you own and get a full security report in minutes.
 | JS Secret Scanner | Regex-scans source for API keys, tokens and credentials |
 
 ### ⚡ Active Tests
+
 | Check | Description |
 |---|---|
 | XSS Injection Test | Injects a marker and checks for unescaped reflection |
@@ -28,6 +30,7 @@ Point it at any domain you own and get a full security report in minutes.
 | Rate Limit Detection | Fires 10 rapid requests and checks for HTTP 429 |
 
 ### 🖥️ Infrastructure
+
 | Check | Description |
 |---|---|
 | SSL/TLS Inspection | TLS version, cipher, certificate expiry and issuer |
@@ -40,6 +43,7 @@ Point it at any domain you own and get a full security report in minutes.
 | Website Screenshot | Full-resolution capture via headless Chrome |
 
 ### 🌐 Threat Intelligence
+
 | Check | Description |
 |---|---|
 | WHOIS Intelligence | Registrar, creation and expiration dates |
@@ -48,6 +52,7 @@ Point it at any domain you own and get a full security report in minutes.
 | Email Harvesting | Extracts exposed email addresses from page source |
 
 ### 📄 Reporting
+
 - Full PDF report with CVSS scores, CWE IDs and remediation steps
 - Overall risk rating (Critical / High / Medium / Low)
 - Per-finding impact and fix guidance
@@ -56,12 +61,31 @@ Point it at any domain you own and get a full security report in minutes.
 
 ## Installation
 
-**Requirements:** Python 3.9+, Google Chrome installed
+### Requirements
+
+- Python 3.9+
+- Google Chrome (for screenshots)
+- `nmap` (for port scanning)
+
+Install system dependencies first:
+
+```bash
+# macOS
+brew install nmap
+
+# Ubuntu / Debian
+sudo apt install nmap
+
+# Windows
+# Download from https://nmap.org/download.html and add to PATH
+```
+
+Then clone and run:
 
 ```bash
 # 1. Clone the repo
 git clone https://github.com/Rubalchoudhary21/Vulnix-ai.git
-cd vulnix-ai
+cd Vulnix-ai
 
 # 2. Create a virtual environment (recommended)
 python -m venv venv
@@ -93,7 +117,7 @@ The app opens automatically at `http://localhost:8501`
 
 ---
 
-## Tech stack
+## Tech Stack
 
 - **Frontend / UI** — Streamlit
 - **HTTP scanning** — Requests, Selenium (screenshot)
@@ -101,6 +125,11 @@ The app opens automatically at `http://localhost:8501`
 - **DNS / WHOIS** — dnspython, python-whois, ipwhois
 - **Reporting** — ReportLab (PDF)
 
+---
+
+## License
+
+MIT License — free to use, modify and distribute. See [LICENSE](LICENSE) for details.
 ---
 
 ## License
