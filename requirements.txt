@@ -1,0 +1,8 @@
+streamlit
+requests
+selenium
+python-whois
+dnspython
+ipwhois
+reportlab
+webdriver-manager
